@@ -1,6 +1,5 @@
 # Trybe 
 
----
 
 Este repositório contém todas as atividades de aprendizagem desenvolvidas por *[David Azevedo](https://www.linkedin.com/in/dl-azevedo/)* enquanto estudava na [Trybe](https://www.betrybe.com/) ![rocket](https://github.githubassets.com/images/icons/emoji/unicode/1f680.png)
 
@@ -10,7 +9,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 ## Introdução - Desenvolvimento Web :hourglass_flowing_sand:
 
-***
 
 ##### Bloco 1: Introdução - Unix & Shell
 
