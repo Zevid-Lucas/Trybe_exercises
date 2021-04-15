@@ -6,3 +6,7 @@ p {
 ol:hover {
   background-color: #52c0e5;
 }
+
+li:active {
+  font-family: monospace;
+}
