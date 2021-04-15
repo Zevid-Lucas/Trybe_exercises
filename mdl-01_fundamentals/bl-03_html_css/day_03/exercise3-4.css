@@ -20,6 +20,7 @@ div:nth-of-type(2) {
 div:nth-of-type(3) {
   background-color: darkorange;
   color: antiquewhite;
+  padding: 30px;
 }
 
 div:nth-of-type(4) {
@@ -30,4 +31,8 @@ div:nth-of-type(4) {
 div:nth-of-type(5) {
   background-color: peru;
   color: azure;
+}
+
+div:nth-child(odd) h3 {
+  font-style: italic;
 }
