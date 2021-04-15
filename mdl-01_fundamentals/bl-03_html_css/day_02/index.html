@@ -4,19 +4,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <tile>Introdução a CSS</tile>
+  <title>Introdução a CSS</title>
   <style>
+    body {
+      font-size: 16px;
+    }
+
     h1 {
       color: orange;
+      font-family: sans-serif;
       font-size: 65px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 3em;
+      font-style: oblique;
+      font-weight: 600;
+      text-decoration: underline dotted aquamarine 6px;
     }
 
     ul {
       background-color: darkkhaki;
+      line-height: 2em;
+
     }
 
     .bgc-content {
       background-color: floralwhite;
+    }
+
+    .bgc-yellow {
+      background-color: yellow;
+    }
+
+    .bgc-red {
+      background-color: red;
+    }
+
+    .bgc-brown {
+      background-color: brown;
     }
   </style>
 </head>
@@ -25,9 +52,9 @@
   <h1>Exercício 3.2</h1>
   <p class="bgc-content">Qual é a sua cor favorita?</p>
   <ul class="bgc-content">
-    <li>Amarelo</li>
-    <li>Vermelho</li>
-    <li>Marrom</li>
+    <li class="bgc-yellow">Amarelo</li>
+    <li class="bgc-red">Vermelho</li>
+    <li class="bgc-brown">Marrom</li>
   </ul>
 </body>
 
