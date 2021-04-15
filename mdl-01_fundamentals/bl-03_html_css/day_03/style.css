@@ -5,3 +5,8 @@
   text-align: center;
   vertical-align: top;
 }
+
+.width-and-height {
+  height: 50px;
+  width: 50px;
+}
