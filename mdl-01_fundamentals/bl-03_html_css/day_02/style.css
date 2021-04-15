@@ -1,0 +1,38 @@
+body {
+  font-size: 16px;
+}
+
+h1 {
+  color: orange;
+  font-family: sans-serif;
+  font-size: 65px;
+  text-align: center;
+}
+
+p {
+  font-size: 3em;
+  font-style: oblique;
+  font-weight: 600;
+  text-decoration: underline dotted aquamarine 6px;
+}
+
+ul {
+  background-color: darkkhaki;
+  line-height: 2em;
+}
+
+.bgc-content {
+  background-color: floralwhite;
+}
+
+.bgc-yellow {
+  background-color: yellow;
+}
+
+.bgc-red {
+  background-color: red;
+}
+
+.bgc-brown {
+  background-color: brown;
+}
