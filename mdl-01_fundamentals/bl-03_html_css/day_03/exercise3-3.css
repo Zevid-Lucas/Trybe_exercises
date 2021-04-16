@@ -1,0 +1,12 @@
+h1,
+p {
+  text-align: center;
+}
+
+ol:hover {
+  background-color: #52c0e5;
+}
+
+li:active {
+  font-family: monospace;
+}
