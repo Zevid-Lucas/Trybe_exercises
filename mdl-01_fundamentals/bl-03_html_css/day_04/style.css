@@ -8,6 +8,8 @@ h1 {
   height: 50px;
   text-align: center;
   width: 200px;
+  display: block;
+  margin: auto;
 }
 
 .second {
@@ -16,12 +18,19 @@ h1 {
   height: 50px;
   text-align: center;
   width: 300px;
+  display: inline-block;
 }
 
 .third {
+  display: inline-block;
   background-color: rgb(170, 142, 106);
   font-size: 20px;
   height: 50px;
   text-align: center;
   width: 300px;
+}
+
+.podium-section,
+.award-section {
+  text-align: center;
 }
