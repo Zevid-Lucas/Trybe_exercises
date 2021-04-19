@@ -27,17 +27,45 @@
 
 .container {
   margin: 0 auto;
-  width: 1440px;
+  width: 940px;
 }
 
 .main_title {
   color: #ffeeee;
   background-color: #3388cc;
+  margin: auto;
   padding: 30px 0;
   text-align: center;
+  width: 940px;
 }
 
-figure img {
-  background-color: #225599;
-  width: 600px;
+.section_information {
+  padding-top: 30px;
+}
+
+.float {
+  float: left;
+  width: 60%;
+}
+
+.not-float {
+  clear: both;
+}
+
+.section_title {
+  margin-bottom: 15px;
+}
+
+table,
+td,
+th {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 5px 20px;
+}
+
+table {
+  width: 30%;
+  margin: 30px 0;
+  float: right;
 }
