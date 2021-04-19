@@ -77,3 +77,38 @@ table {
 .main_subtitle {
   margin-bottom: 10px;
 }
+
+.section-float {
+  display: inline-block;
+  width: 70%;
+}
+
+.section-float::after {
+  background-color: #aaa;
+  content: '';
+  display: block;
+  margin-top: 50px;
+  width: 940px;
+  height: 1px;
+  opacity: 0.5;
+}
+
+.section-float:not(.section-float:nth-last-child(5)) {
+  margin-bottom: 90px;
+}
+
+img {
+  float: right;
+  height: 150px;
+  width: 100%;
+}
+
+figure {
+  float: right;
+
+  width: 30%;
+}
+
+.not-float {
+  clear: both;
+}
