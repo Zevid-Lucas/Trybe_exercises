@@ -1,5 +1,5 @@
-let custoProdutoInicial = 600;
-let vendaProduto = 1000;
+let custoProdutoInicial = 500;
+let vendaProduto = 900;
 let impostoProduto = (custoProdutoInicial * 20) / 100;
 let custoProdutoFinal = custoProdutoInicial + impostoProduto;
 let lucroProduto = vendaProduto - custoProdutoFinal;
