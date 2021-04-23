@@ -9,7 +9,7 @@ Nesse módulo aprendi a utilizar os comandos básicos na linha de terminal, cons
 - [x] Unix & Bash utilizar, com familiaridade, os comandos básicos da linha de comando, executando programas, navegando e manipulando arquivos.
 - [x] Git Utilizar a ferramenta, seguindo um modelo padronizado de branching e merging. 
 - [x] Internet Compreender os conceitos básicos de rede e os fundamentos da internet. 
-- [ ] HTML Aplicar a linguagem de forma semântica, utilizando, com familiaridade, seus elementos. 
-- [ ] CSS Utilizar de forma correta e organizada os seletores da linguagem para aplicar estilos em marcações HTML. 
+- [x] HTML Aplicar a linguagem de forma semântica, utilizando, com familiaridade, seus elementos. 
+- [x] CSS Utilizar de forma correta e organizada os seletores da linguagem para aplicar estilos em marcações HTML. 
 - [ ] Javascript Introduzir os conceitos da programação estruturada. Utilizar de forma eficiente os recursos básicos do Javascript.
 
