@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function createElementH1() {
+        let elementBody = document.querySelector('body');
+        let createH1 = document.createElement('h1');
+        createH1.innerHTML = 'Exercício 5.2 - JavaScript';
+        elementBody.appendChild(createH1);
+      }
+      createElementH1();
+
+      function createMainContet() {
+        let createDiv = document.createElement('div');
+        createDiv.className = 'main-content';
+        document.querySelector('body').appendChild(createDiv);
+      }
+      createMainContet();
+
+      function createCenterContent() {
+        let createDivChild = document.createElement('div');
+        createDivChild.className = 'center-content';
+        document.querySelector('.main-content').appendChild(createDivChild);
+      }
+      createCenterContent();
+
+      function createElementP() {
+        let createElementP = document.createElement('p');
+        createElementP.innerHTML = 'Brincando com o DOM ;)';
+        document.querySelector('.center-content').appendChild(createElementP);
+      }
+      createElementP();
+
+      function createLeftContent() {
+        let createLeftContent = document.createElement('div');
+        createLeftContent.className = 'left-content';
+        document.querySelector('.main-content').appendChild(createLeftContent);
+      }
+      createLeftContent();
+
+      function createRightContent() {
+        let createRightContent = document.createElement('div');
+        createRightContent.className = 'right-content';
+        document.querySelector('.main-content').appendChild(createRightContent);
+      }
+      createRightContent();
+
+      function addImg() {
+        let createElementImg = document.createElement('img');
+        createElementImg.className = 'small-image';
+        createElementImg.src = 'https://picsum.photos/200';
+        document.querySelector('.left-content').appendChild(createElementImg);
+      }
+      addImg();
+
+      function createUnorderedList() {
+        let unorderedList = document.createElement('ul');
+        let arrayNumbers = [
+          'Um',
+          'Dois',
+          'Três',
+          'Quatro',
+          'Cinco',
+          'Seis',
+          'Sete',
+          'Oito',
+          'Nove',
+          'Dez',
+        ];
+        document.querySelector('.right-content').appendChild(unorderedList);
+        for (let index = 0; index < arrayNumbers.length; index += 1) {
+          let createList = document.createElement('li');
+          createList.innerHTML = arrayNumbers[index];
+          document.querySelector('ul').appendChild(createList);
+        }
+      }
+      createUnorderedList();
+
+      function createElementH3() {
+        let mainContent = document.querySelector('.main-content');
+        for (let index = 1; index <= 3; index += 1) {
+          let createH3 = document.createElement('h3');
+          createH3.className = 'description';
+          createH3.innerHTML = 'Trybe' + index;
+          mainContent.appendChild(createH3);
+        }
+      }
+      createElementH3();
+
+      function addClassElementH1() {
+        document.querySelector('h1').className = 'title';
+      }
+      addClassElementH1();
+
+      function removeDiv() {
+        let divLeftContent = document.querySelector('.left-content');
+        document.querySelector('.main-content').removeChild(divLeftContent);
+      }
+      removeDiv();
+
+      function changePositionDiv() {
+        let divRightContent = document.querySelector('.right-content');
+        divRightContent.style.marginRight = 'auto';
+      }
+      changePositionDiv();
+
+      function changeBgcCenterContent() {
+        let centerContent = document.querySelector('.center-content');
+        centerContent.style.backgroundColor = 'green';
+      }
+      changeBgcCenterContent();
+
+      function removeItemList() {
+        let elementUl = document.querySelector('ul');
+        elementUl.lastChild.remove();
+        elementUl.lastChild.remove();
+      }
+      removeItemList();
+    </script>
+  </body>
+</html>
