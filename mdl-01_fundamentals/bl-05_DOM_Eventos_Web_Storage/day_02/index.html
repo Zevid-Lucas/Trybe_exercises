@@ -146,6 +146,12 @@
         document.querySelector('h1').className = 'title';
       }
       addClassElementH1();
+
+      function removeDiv() {
+        let divLeftContent = document.querySelector('.left-content');
+        document.querySelector('.main-content').removeChild(divLeftContent);
+      }
+      removeDiv();
     </script>
   </body>
 </html>
