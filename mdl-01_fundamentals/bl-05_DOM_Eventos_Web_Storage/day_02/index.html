@@ -95,7 +95,7 @@
 
       function createRightContent() {
         let createRightContent = document.createElement('div');
-        createRightContent.className = 'rigth-content';
+        createRightContent.className = 'right-content';
         document.querySelector('.main-content').appendChild(createRightContent);
       }
       createRightContent();
@@ -107,6 +107,29 @@
         document.querySelector('.left-content').appendChild(createElementImg);
       }
       addImg();
+
+      function createUnorderedList() {
+        let unorderedList = document.createElement('ul');
+        let arrayNumbers = [
+          'Um',
+          'Dois',
+          'Três',
+          'Quatro',
+          'Cinco',
+          'Seis',
+          'Sete',
+          'Oito',
+          'Nove',
+          'Dez',
+        ];
+        document.querySelector('.right-content').appendChild(unorderedList);
+        for (let index = 1; index <= arrayNumbers.length; index += 1) {
+          let createList = document.createElement('li');
+          createList.innerHTML = arrayNumbers[index];
+          document.querySelector('ul').appendChild(createList);
+        }
+      }
+      createUnorderedList();
     </script>
   </body>
 </html>
