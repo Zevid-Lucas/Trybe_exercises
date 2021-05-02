@@ -78,6 +78,13 @@
         document.querySelector('.main-content').appendChild(createDivChild);
       }
       createCenterContent();
+
+      function createElementP() {
+        let createElementP = document.createElement('p');
+        createElementP.innerHTML = 'Brincando com o DOM ;)';
+        document.querySelector('.center-content').appendChild(createElementP);
+      }
+      createElementP();
     </script>
   </body>
 </html>
