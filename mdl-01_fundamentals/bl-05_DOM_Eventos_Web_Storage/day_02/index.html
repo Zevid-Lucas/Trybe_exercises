@@ -92,6 +92,21 @@
         document.querySelector('.main-content').appendChild(createLeftContent);
       }
       createLeftContent();
+
+      function createRightContent() {
+        let createRightContent = document.createElement('div');
+        createRightContent.className = 'rigth-content';
+        document.querySelector('.main-content').appendChild(createRightContent);
+      }
+      createRightContent();
+
+      function addImg() {
+        let createElementImg = document.createElement('img');
+        createElementImg.className = 'small-image';
+        createElementImg.src = 'https://picsum.photos/200';
+        document.querySelector('.left-content').appendChild(createElementImg);
+      }
+      addImg();
     </script>
   </body>
 </html>
