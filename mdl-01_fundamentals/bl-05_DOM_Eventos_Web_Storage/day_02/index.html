@@ -64,6 +64,20 @@
         elementBody.appendChild(createH1);
       }
       createElementH1();
+
+      function createMainContet() {
+        let createDiv = document.createElement('div');
+        createDiv.className = 'main-content';
+        document.querySelector('body').appendChild(createDiv);
+      }
+      createMainContet();
+
+      function createCenterContent() {
+        let createDivChild = document.createElement('div');
+        createDivChild.className = 'center-content';
+        document.querySelector('.main-content').appendChild(createDivChild);
+      }
+      createCenterContent();
     </script>
   </body>
 </html>
