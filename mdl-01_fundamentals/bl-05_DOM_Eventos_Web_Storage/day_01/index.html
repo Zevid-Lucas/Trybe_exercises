@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Exercício 5.1 - JavaEscripito</h1>
+    <div class="main-content">
+      <div class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </div>
+    </div>
+    <script>
+      function changeTextTagP() {
+        let elementP = document.getElementsByTagName('p')[1];
+        elementP.innerHTML =
+          'Eu me vejo formando, trabalhando em uma empresa, com salário acima de 3000.';
+      }
+      changeTextTagP();
+
+      function changeBgcGreen() {
+        let mainContent = document.querySelector('.main-content');
+        mainContent.style.backgroundColor = 'rgb(76,164,109)';
+      }
+      changeBgcGreen();
+
+      function changeBgcWhite() {
+        let centerContent = document.querySelector('.center-content');
+        centerContent.style.backgroundColor = 'rgb(255,255,255)';
+      }
+      changeBgcWhite();
+
+      function correctTextH1() {
+        let elementH1 = document.querySelector('.title');
+        elementH1.innerHTML = 'Exercício 5.1 - JavaScript';
+      }
+      correctTextH1();
+
+      function textElementPUpperCase() {
+        let elementP = document.getElementsByTagName('p')[0];
+        elementP.innerHTML = elementP.innerHTML.toUpperCase();
+      }
+      textElementPUpperCase();
+
+      function secretMessage() {
+        let messageConsole = document.getElementsByTagName('p');
+        for (let index = 0; index < messageConsole.length; index += 1) {
+          console.log(messageConsole[index].innerHTML);
+        }
+      }
+      secretMessage();
+    </script>
+  </body>
+</html>
