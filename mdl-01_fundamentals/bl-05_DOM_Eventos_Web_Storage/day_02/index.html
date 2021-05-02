@@ -85,6 +85,13 @@
         document.querySelector('.center-content').appendChild(createElementP);
       }
       createElementP();
+
+      function createLeftContent() {
+        let createLeftContent = document.createElement('div');
+        createLeftContent.className = 'left-content';
+        document.querySelector('.main-content').appendChild(createLeftContent);
+      }
+      createLeftContent();
     </script>
   </body>
 </html>
