@@ -130,6 +130,16 @@
         }
       }
       createUnorderedList();
+
+      function createElementH3() {
+        let mainContent = document.querySelector('.main-content');
+        for (let index = 1; index <= 3; index += 1) {
+          let createH3 = document.createElement('h3');
+          createH3.innerHTML = 'Trybe' + index;
+          mainContent.appendChild(createH3);
+        }
+      }
+      createElementH3();
     </script>
   </body>
 </html>
