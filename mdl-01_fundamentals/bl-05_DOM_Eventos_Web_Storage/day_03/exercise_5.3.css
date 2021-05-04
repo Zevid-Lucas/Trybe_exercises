@@ -28,6 +28,7 @@ button {
 
 #days li {
   color: #777;
+  cursor: default;
   display: inline-block;
   font-size: 20px;
   margin: 5px;
@@ -158,4 +159,5 @@ label {
 .day {
   display: inline-block;
   height: 40px;
+  line-height: 35px;
 }
