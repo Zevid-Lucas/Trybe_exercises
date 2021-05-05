@@ -2,6 +2,7 @@ let getColorInput = document.querySelector('#font-color');
 let getBgcInput = document.querySelector('#bgc-color');
 let getFontSizeInput = document.querySelector('#font-size');
 let getLineHeightInput = document.querySelector('#line-height');
+let getFontFamilyInput = document.querySelector('#font-family');
 let getElementP = document.querySelectorAll('p');
 
 //EventListener color
@@ -44,6 +45,13 @@ getLineHeightInput.addEventListener('input', function (event) {
   localStorage.setItem('lineHeight', lineHeightSelected);
 });
 
+//EventListener fontFamily
+getFontFamilyInput.addEventListener('input', function (event) {
+  let fontFamilySelected = event.target.value;
+  document.querySelector('body').style.fontFamily = fontFamilySelected;
+  localStorage.setItem('fontFamily', fontFamilySelected);
+});
+
 // Resgata as definições selecionadas
 function formatSelected() {
   let colorSelected = localStorage.getItem('color');
@@ -61,5 +69,8 @@ function formatSelected() {
   for (let index = 0; index < getElementP.length; index += 1) {
     getElementP[index].style.lineHeight = lineHeightSelected + 'px';
   }
+
+  let fontFamily = localStorage.getItem('fontFamily');
+  document.querySelector('body').style.fontFamily = fontFamily;
 }
 formatSelected();
