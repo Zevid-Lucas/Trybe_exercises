@@ -1,5 +1,7 @@
 let getColorInput = document.querySelector('#font-color');
 let getBgcInput = document.querySelector('#bgc-color');
+let getFontSizeInput = document.querySelector('#font-size');
+let getElementP = document.querySelectorAll('p');
 
 //EventListener color
 getColorInput.addEventListener('input', function (event) {
@@ -16,6 +18,19 @@ getBgcInput.addEventListener('input', function (event) {
   localStorage.setItem('backgroundColor', bgcColor);
 });
 
+//EventListener fontSize
+getFontSizeInput.addEventListener('input', function (event) {
+  let valueFontSize = event.target.value;
+
+  for (let index = 0; index < getElementP.length; index += 1) {
+    if (valueFontSize < 10) valueFontSize = '10';
+    if (valueFontSize > 42) valueFontSize = '42';
+    getElementP[index].style.fontSize = valueFontSize + 'px';
+  }
+  let sizeFont = valueFontSize + 'px';
+  localStorage.setItem('tamanhoDaFonte', sizeFont);
+});
+
 // Resgata as definições selecionadas
 function formatSelected() {
   let colorSelected = localStorage.getItem('color');
@@ -23,5 +38,10 @@ function formatSelected() {
 
   let bgcSelected = localStorage.getItem('backgroundColor');
   document.querySelector('body').style.backgroundColor = bgcSelected;
+
+  let fontSizeSelected = localStorage.getItem('tamanhoDaFonte');
+  for (let index = 0; index < getElementP.length; index += 1) {
+    getElementP[index].style.fontSize = fontSizeSelected;
+  }
 }
 formatSelected();
