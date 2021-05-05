@@ -1,6 +1,7 @@
 let getColorInput = document.querySelector('#font-color');
 let getBgcInput = document.querySelector('#bgc-color');
 let getFontSizeInput = document.querySelector('#font-size');
+let getLineHeightInput = document.querySelector('#line-height');
 let getElementP = document.querySelectorAll('p');
 
 //EventListener color
@@ -28,7 +29,19 @@ getFontSizeInput.addEventListener('input', function (event) {
     getElementP[index].style.fontSize = valueFontSize + 'px';
   }
   let sizeFont = valueFontSize + 'px';
-  localStorage.setItem('tamanhoDaFonte', sizeFont);
+  localStorage.setItem('fontSize', sizeFont);
+});
+
+//EventListener lineHeight
+getLineHeightInput.addEventListener('input', function (event) {
+  let lineHeightSelected = event.target.value;
+
+  for (let index = 0; index < getElementP.length; index += 1) {
+    if (lineHeightSelected < 10) lineHeightSelected = '10';
+    if (lineHeightSelected > 42) lineHeightSelected = '42';
+    getElementP[index].style.lineHeight = lineHeightSelected + 'px';
+  }
+  localStorage.setItem('lineHeight', lineHeightSelected);
 });
 
 // Resgata as definições selecionadas
@@ -39,9 +52,14 @@ function formatSelected() {
   let bgcSelected = localStorage.getItem('backgroundColor');
   document.querySelector('body').style.backgroundColor = bgcSelected;
 
-  let fontSizeSelected = localStorage.getItem('tamanhoDaFonte');
+  let fontSizeSelected = localStorage.getItem('fontSize');
   for (let index = 0; index < getElementP.length; index += 1) {
     getElementP[index].style.fontSize = fontSizeSelected;
+  }
+
+  let lineHeightSelected = localStorage.getItem('lineHeight');
+  for (let index = 0; index < getElementP.length; index += 1) {
+    getElementP[index].style.lineHeight = lineHeightSelected + 'px';
   }
 }
 formatSelected();
