@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="main-title">Resume Registration</h1>
+      <p class="paragraph-alert"><em>Data with an asterisk (*) is required</em></p>
+    </header>
+    <form action="" method="GET" class="form">
+      <fieldset>
+        <legend>Personal Data</legend>
+        <div class="container-form">
+          <div>
+            <label for="input-name">Name<span>*</span></label>
+            <input type="text" name="name" id="input-name" maxlength="40" required />
+          </div>
+          <div>
+            <label for="input-email">E-mail<span>*</span></label>
+            <input type="email" name="email" id="input-email" maxlength="50" required />
+          </div>
+          <div>
+            <label for="input-cpf">CPF<span>*</span></label>
+            <input type="text" name="cpf" id="input-cpf" maxlength="11" required />
+          </div>
+          <div>
+            <label for="input-address">Address<span>*</span></label>
+            <input type="text" name="address" id="input-address" maxlength="200" required />
+          </div>
+          <div>
+            <label for="input-city">City<span>*</span></label>
+            <input type="text" name="city" id="input-city" maxlength="28" required />
+          </div>
+          <div>
+            <label for="input-state">States</label>
+            <select name="state" id="input-state"></select>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
