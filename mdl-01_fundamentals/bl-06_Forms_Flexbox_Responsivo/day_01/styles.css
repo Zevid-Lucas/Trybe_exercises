@@ -1,1 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(69, 69, 69);
+  color: rgb(99, 99, 99);
+}
 
+.header {
+  background-color: rgb(255, 243, 249);
+  box-shadow: 1px 1px 3px rgb(000, 000, 000);
+  border-radius: 3px;
+
+  margin: 30px auto;
+  padding: 30px;
+  text-align: center;
+
+  width: 70%;
+}
+
+.form {
+  background-color: rgb(232, 235, 238);
+
+  margin: 30px auto;
+  padding: 30px;
+
+  width: 70%;
+}
+
+.container-form {
+  padding: 30px;
+}
+
+input[type='text'],
+[type='email'] {
+  display: block;
+  margin: 3px 0 6px 0;
+  width: 50%;
+}
+span {
+  color: rgb(209, 79, 99);
+}
