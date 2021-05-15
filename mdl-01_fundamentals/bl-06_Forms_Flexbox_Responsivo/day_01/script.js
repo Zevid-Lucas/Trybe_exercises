@@ -51,3 +51,18 @@ createButton('reset', 'btn-reset', 'Reset');
 function stopValidate(e) {
   e.preventDefault();
 }
+
+let arrayInput = [
+  'name',
+  'email',
+  'cpf',
+  'address',
+  'city',
+  'resume',
+  'office',
+  'resume-office',
+  'start-date',
+  '',
+];
+
+let error = false;
