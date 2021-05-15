@@ -86,3 +86,48 @@ function checkRequired() {
   }
   return error;
 }
+
+function checkFormat() {
+  for (let index = 0; index < arrayInput.length - 1; index += 1) {
+    const inputsType = document.querySelector(`[name=${arrayInput[index]}]`);
+    const elementLabel = inputsType.previousElementSibling.innerText.slice(0, -1);
+
+    if (inputsType.name === 'email') {
+      const emailVerification = /.+@.+/g;
+      if (!emailVerification.test(inputsType.value)) {
+        let elementLi = document.createElement('li');
+        elementLi.innerHTML = `O campo ${elementLabel} é inválido`;
+        elementLi.classList.add('error-info');
+        document.querySelector('.container-error').appendChild(elementLi);
+        window.scrollTo(0, 0);
+        error = true;
+      }
+    }
+
+    if (inputsType.name === 'cpf') {
+      const cpfValidation = /\d{11}/g;
+      if (!cpfValidation.test(inputsType.value)) {
+        let elementLi = document.createElement('li');
+        elementLi.classList.add('error-info');
+        elementLi.innerHTML = `O campo ${elementLabel} é inválido`;
+        document.querySelector('.container-error').appendChild(elementLi);
+        window.scrollTo(0, 0);
+        error = true;
+      }
+    }
+
+    if (inputsType.name === 'start-date') {
+      const dateValidation =
+        /([0-2][1-9]|[3][01])\/([0][1-9]|[1][12])\/([0-1][0-9][0-9][0-9]|[2][0][0-1][0-9]|[2][0][2][01])/g;
+      if (!dateValidation.test(inputsType.value)) {
+        let elementLi = document.createElement('li');
+        elementLi.innerHTML = `O campo ${elementLabel} é inválido. Formato dd/mm/aaaa.`;
+        elementLi.classList.add('error-info');
+        document.querySelector('.container-error').appendChild(elementLi);
+        window.scrollTo(0, 0);
+        error = true;
+      }
+    }
+  }
+  return error;
+}
