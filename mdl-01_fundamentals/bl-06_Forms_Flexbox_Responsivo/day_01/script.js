@@ -65,6 +65,21 @@ let arrayInput = [
   '',
 ];
 
+const form = document.querySelector('.form');
+form.addEventListener('click', (e) => {
+  if (e.target.className === 'btn-submit') {
+    stopValidate(e);
+    checkRequired();
+    checkFormat();
+    submitForm(error);
+    clearForm();
+  }
+  if (e.target.className === 'btn-reset') {
+    document.querySelector('.container-validation').innerHTML = '';
+    document.querySelector('.container-error').innerHTML = '';
+  }
+});
+
 let error = false;
 
 function checkRequired() {
