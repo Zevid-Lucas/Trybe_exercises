@@ -145,3 +145,13 @@ function submitForm(msg) {
     }
   }
 }
+
+function clearForm() {
+  for (let index = 0; index < arrayInput.length - 1; index += 1) {
+    const inputsType = document.querySelector(`[name=${arrayInput[index]}]`);
+    if (!error) {
+      inputsType.value = '';
+    }
+  }
+  error = false;
+}
