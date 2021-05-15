@@ -88,21 +88,33 @@
       </div>
 
       <div class="container-form">
-        <div>
+        <div class="form-floating">
+          <textarea
+            class="form-control"
+            name="resume"
+            id="input-resume"
+            cols="30"
+            rows="10"
+          ></textarea>
           <label for="input-resume">Resume Summary<span>*</span></label>
-          <textarea name="resume" id="input-resume" cols="30" rows="10"></textarea>
         </div>
-        <div>
+        <div class="form-floating">
+          <input class="form-control" type="text" name="office" maxlength="40" id="input-office" />
           <label for="input-office">Office<span>*</span></label>
-          <input type="text" name="office" maxlength="40" id="input-office" />
         </div>
-        <div>
+        <div class="form-floating">
+          <input
+            class="form-control"
+            type="text"
+            name="resume-office"
+            maxlength="500"
+            id="input-rf"
+          />
           <label for="input-rf">Resume office<span>*</span></label>
-          <input type="text" name="resume-office" maxlength="500" id="input-rf" />
         </div>
-        <div>
+        <div class="form-floating">
+          <input class="form-control" type="text" name="start-date" id="input-date" />
           <label for="input-date">Start date<span>*</span></label>
-          <input type="text" name="start-date" id="input-date" />
         </div>
       </div>
 
