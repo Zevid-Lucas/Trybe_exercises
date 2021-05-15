@@ -131,3 +131,17 @@ function checkFormat() {
   }
   return error;
 }
+
+function submitForm(msg) {
+  document.querySelector('.container-validation').innerHTML = '';
+  for (let index = 0; index < arrayInput.length - 1; index += 1) {
+    const inputsType = document.querySelector(`[name=${arrayInput[index]}]`);
+    const elementLabel = inputsType.previousElementSibling.innerText.slice(0, -1);
+    if (!msg) {
+      let elementP = document.createElement('p');
+      elementP.innerHTML = `${elementLabel}: ${inputsType.value} `;
+      elementP.className = 'itens-sucess';
+      document.querySelector('.container-validation').appendChild(elementP);
+    }
+  }
+}
