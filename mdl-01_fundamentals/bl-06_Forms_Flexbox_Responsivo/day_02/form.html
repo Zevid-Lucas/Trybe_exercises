@@ -20,7 +20,7 @@
     <ul class="container-error"></ul>
     <form action="" method="GET" class="container">
       <div class="container-form">
-        <div class="form-floating mb-3">
+        <div class="form-floating mb-4">
           <input
             class="form-control"
             type="text"
@@ -31,7 +31,7 @@
           />
           <label for="input-name">Name<span>*</span></label>
         </div>
-        <div class="form-floating mb-3">
+        <div class="form-floating mb-4">
           <input
             class="form-control"
             type="email"
@@ -42,7 +42,7 @@
           />
           <label for="input-email">E-mail<span>*</span></label>
         </div>
-        <div class="form-floating mb-3">
+        <div class="form-floating mb-4">
           <input
             class="form-control"
             type="text"
@@ -53,7 +53,7 @@
           />
           <label for="input-cpf">CPF<span>*</span></label>
         </div>
-        <div class="form-floating mb-3">
+        <div class="form-floating mb-4">
           <input
             class="form-control"
             type="text"
@@ -64,7 +64,7 @@
           />
           <label for="input-address">Address<span>*</span></label>
         </div>
-        <div class="form-floating mb-3">
+        <div class="form-floating mb-4">
           <input
             class="form-control"
             type="text"
@@ -75,11 +75,11 @@
           />
           <label for="input-city">City<span>*</span></label>
         </div>
-        <div class="form-floating">
+        <div class="form-floating mb-4">
           <select class="form-select" name="state" id="input-state" required></select>
           <label for="input-state">States <span>*</span></label>
         </div>
-        <div>
+        <div class="mb-4">
           <label for="input-home">Home</label>
           <input type="radio" name="home" id="input-home" value="house" checked />
           <label for="input-ap">Apartment</label>
@@ -88,7 +88,7 @@
       </div>
 
       <div class="container-form">
-        <div class="form-floating">
+        <div class="form-floating mb-4">
           <textarea
             class="form-control"
             name="resume"
@@ -98,11 +98,11 @@
           ></textarea>
           <label for="input-resume">Resume Summary<span>*</span></label>
         </div>
-        <div class="form-floating">
+        <div class="form-floating mb-4">
           <input class="form-control" type="text" name="office" maxlength="40" id="input-office" />
           <label for="input-office">Office<span>*</span></label>
         </div>
-        <div class="form-floating">
+        <div class="form-floating mb-4">
           <input
             class="form-control"
             type="text"
@@ -112,13 +112,16 @@
           />
           <label for="input-rf">Resume office<span>*</span></label>
         </div>
-        <div class="form-floating">
+        <div class="form-floating mb-4">
           <input class="form-control" type="text" name="start-date" id="input-date" />
           <label for="input-date">Start date<span>*</span></label>
         </div>
       </div>
 
-      <div class="section-btn"></div>
+      <div class="section-btn">
+        <button type="button" class="btn btn-outline-primary">Submit</button>
+        <button type="button" class="btn btn-outline-danger">Reset</button>
+      </div>
     </form>
     <div class="container-validation"></div>
     <script src="script.js"></script>
