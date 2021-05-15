@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(199, 199, 199);
+  color: rgb(99, 99, 99);
+}
+
+span,
+.error-info {
+  color: rgb(209, 79, 99);
+}
+
+.header {
+  background-color: rgb(232, 235, 238);
+  box-shadow: 1px 1px 3px rgb(000, 000, 000);
+  border-radius: 3px;
+
+  margin: 30px auto;
+  padding: 30px;
+  text-align: center;
+
+  width: 70%;
+}
+
+.container-error,
+.container-validation {
+  margin: 30px auto;
+  width: 70%;
+
+  list-style: none;
+}
+
+.error-info {
+  margin-left: 30px;
+}
+.form {
+  background-color: rgb(232, 235, 238);
+  box-shadow: 1px 1px 3px rgb(000, 000, 000);
+  border-radius: 3px;
+
+  margin: 30px auto;
+  padding: 30px;
+
+  width: 70%;
+}
+
+.container-form {
+  padding: 30px;
+}
+
+.second-fild {
+  margin-top: 30px;
+}
+
+input[type='text'],
+[type='email'],
+textarea {
+  display: block;
+  margin: 3px 0 6px 0;
+  padding: 3px;
+  width: 50%;
+
+  resize: none;
+}
+
+textarea {
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 6px;
+}
+
+input[type='radio'] {
+  margin: 13px 0;
+}
+
+.section-btn {
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
+}
+
+.btn-submit {
+  border: none;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px rgb(000, 000, 000);
+  background-color: rgb(95, 206, 136);
+  color: rgb(71, 71, 71);
+  cursor: pointer;
+  padding: 6px 20px;
+  margin-right: 30px;
+  opacity: 0.85;
+  transition: 0.3s;
+}
+.btn-submit:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.btn-reset {
+  background-color: rgb(209, 71, 66);
+  border: none;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px rgb(000, 000, 000);
+  color: rgb(190, 190, 190);
+  cursor: pointer;
+  padding: 10px 20px;
+  opacity: 0.85;
+  transition: 0.3s;
+}
+
+.btn-reset:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.itens-sucess {
+  color: rgb(0, 94, 34);
+  margin-left: 30px;
+}
