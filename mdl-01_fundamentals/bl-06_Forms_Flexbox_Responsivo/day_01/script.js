@@ -66,3 +66,23 @@ let arrayInput = [
 ];
 
 let error = false;
+
+function checkRequired() {
+  document.querySelector('.container-error').innerText = '';
+
+  for (let index = 0; index < arrayInput.length - 1; index += 1) {
+    const inputsType = document.querySelector(`[name=${arrayInput[index]}`);
+    const elementLabel = inputsType.previousElementSibling.innerText.slice(0, -1);
+
+    if (inputsType.value === '') {
+      let elementLi = document.createElement('li');
+      elementLi.innerHTML = `O campo ${elementLabel} é obrigatório`;
+      elementLi.classList.add('error-info');
+
+      document.querySelector('.container-error').appendChild(elementLi);
+      window.scrollTo(0, 0);
+      error = true;
+    }
+  }
+  return error;
+}
