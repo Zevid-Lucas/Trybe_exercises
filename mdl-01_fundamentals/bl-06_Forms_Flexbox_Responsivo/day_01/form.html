@@ -11,6 +11,7 @@
       <h1 class="main-title">Resume Registration</h1>
       <p class="paragraph-alert"><em>Data with an asterisk (<span>*</span>) is required</em></p>
     </header>
+    <ul class="container-error"></ul>
     <form action="" method="GET" class="form">
       <fieldset>
         <legend>Personal Data</legend>
@@ -41,9 +42,9 @@
           </div>
           <div>
             <label for="input-home">Home</label>
-            <input type="radio" name="home" id="input-home" checked />
+            <input type="radio" name="home" id="input-home" value="house" checked />
             <label for="input-ap">Apartment</label>
-            <input type="radio" name="home" id="input-ap" />
+            <input type="radio" name="home" id="input-ap" value="apartment" />
           </div>
         </div>
       </fieldset>
@@ -64,11 +65,13 @@
           </div>
           <div>
             <label for="input-date">Start date<span>*</span></label>
-            <input type="text" name="dateStart" id="input-date" />
+            <input type="text" name="start-date" id="input-date" />
           </div>
         </div>
       </fieldset>
+      <div class="section-btn"></div>
     </form>
+    <div class="container-validation"></div>
     <script src="script.js"></script>
   </body>
 </html>
