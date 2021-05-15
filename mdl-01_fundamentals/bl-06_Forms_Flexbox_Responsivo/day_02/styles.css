@@ -1,0 +1,9 @@
+.container {
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px rgb(109, 108, 108);
+  margin-bottom: 50px;
+}
+
+header .lead {
+  padding-bottom: 15px;
+}
