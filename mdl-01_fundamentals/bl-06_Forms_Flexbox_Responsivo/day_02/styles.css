@@ -2,6 +2,16 @@
   border-radius: 3px;
   box-shadow: 3px 3px 3px rgb(109, 108, 108);
   margin-bottom: 50px;
+  padding-top: 30px;
+}
+
+span {
+  color: red;
+  font-size: 22px;
+}
+
+label {
+  font-size: 18px;
 }
 
 header .lead {
