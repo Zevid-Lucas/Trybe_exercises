@@ -37,3 +37,17 @@ function createStateOptions() {
 }
 
 createStateOptions();
+
+function createButton(type, addClass, content) {
+  const createBtn = document.createElement('button');
+  createBtn.setAttribute('type', type);
+  createBtn.className = addClass;
+  createBtn.innerHTML = content;
+  document.querySelector('.section-btn').appendChild(createBtn);
+}
+createButton('submit', 'btn-submit', 'Submit');
+createButton('reset', 'btn-reset', 'Reset');
+
+function stopValidate(e) {
+  e.preventDefault();
+}
