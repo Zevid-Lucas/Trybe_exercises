@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css"
+    />
+
+    <title>Formulario-curriculo</title>
+  </head>
+  <body>
+    <header class="form-header container text-center">
+      <h1>Formulário para cadastro de currículo</h1>
+      <p>Preencha os campos abaixo.</p>
+    </header>
+    <form method="GET" action="" class="container js-form">
+      <fieldset class="form-group">
+        <div class="mb-3">
+          <label class="form-label" for="name">Nome: </label>
+          <input
+            placeholder="Nome completo"
+            class="form-control form_input"
+            type="text"
+            name="name"
+            id="name"
+            maxlength="40"
+            data-validate-field="name"
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="email">Endereço de e-mail: </label>
+          <input
+            placeholder="Digite seu email"
+            class="form-control form_input"
+            type="email"
+            name="email"
+            id="email"
+            maxlength="50"
+            data-validate-field="email"
+          />
+          <div id="emailHelp" class="form-text">Seu e-mail não será compartilhado.</div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="cpf-number">CPF: </label>
+          <input
+            aut
+            placeholder="00000000000"
+            class="form-control form_input"
+            type="text"
+            name="cpf"
+            id="cpf-number"
+            maxlength="11"
+            data-validate-field="cpf"
+          />
+          <div id="cpf-info" class="form-text">Seu CPF não será compartilhado.</div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="address">Endereço: </label>
+          <input
+            placeholder="Endereço"
+            class="form-control form_input"
+            type="text"
+            name="address"
+            id="address"
+            maxlength="200"
+            data-validate-field="address"
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="city">Cidade: </label>
+          <input
+            placeholder="Cidade"
+            class="form-control form_input"
+            type="text"
+            name="city"
+            id="city"
+            maxlength="200"
+            data-validate-field="city"
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="state">Estado: </label>
+          <select class="form-select" name="state" id="state" required></select>
+        </div>
+        <div class="form-group">
+          <label for="type" class="form-label">Tipo:</label>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="casa"
+              name="type"
+            />
+            <label class="form-check-label" for="casa"> Casa </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="apartamento"
+              name="type"
+              checked
+            />
+            <label class="form-check-label" for="apartamento"> Apartamento </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form-group">
+        <div class="mb-3">
+          <label class="form-label" for="cv-resume">Resumo do currículo: </label>
+          <textarea
+            class="form-control form_input"
+            id="cv-resume"
+            name="cv-resume"
+            maxlength="1000"
+            rows="3"
+            data-validate-field="resume"
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="position">Cargo: </label>
+          <input
+            class="form-control form_input"
+            type="text"
+            name="position"
+            id="position"
+            maxlength="40"
+            data-validate-field="office"
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="description">Descrição do cargo: </label>
+          <input
+            class="form-control form_input"
+            type="text"
+            id="description"
+            name="description"
+            data-validate-field="resumeOffice"
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label form_input" for="datepicker">Data de início: </label>
+          <input
+            class="form-control"
+            id="datepicker"
+            type="text"
+            placeholder="DD/MM/AAAA"
+            name="start-date"
+            data-validate-field="date"
+          />
+        </div>
+      </fieldset>
+      <button type="submit" class="btn btn-primary submit-button mb-4">Enviar</button>
+      <button type="reset" class="btn btn-danger clear-button mb-4">Limpar</button>
+    </form>
+    <script src="node_modules/moment/min/moment.min.js"></script>
+    <script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
