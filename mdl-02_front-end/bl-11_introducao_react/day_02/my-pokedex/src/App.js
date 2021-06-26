@@ -5,7 +5,7 @@ import Pokedex from './pokedex';
 class App extends Component {
   render() {
     return (
-      <Pokedex />
+      <Pokedex pokemons={pokemons}/>
     )
   }
 }
