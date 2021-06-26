@@ -1,0 +1,80 @@
+body {
+  background-color: silver;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h4 {
+  color: whitesmoke;
+  text-align: center;
+}
+
+p {
+  color: seashell;
+  margin-left: 20px;
+  text-align: left;
+}
+
+section {
+  display: inline-block;
+  margin: 20px;
+}
+
+.pokedex-title {
+  width: 300px;
+}
+
+.Electric {
+  background-color: #eed535;
+  border: transparent;
+  border-radius: 9px;
+}
+
+.Fire {
+  background-color: #fd7d24;
+  border: transparent;
+  border-radius: 9px;
+}
+
+.Bug {
+  background-color: #729f3f;
+  border: transparent;
+  border-radius: 9px;
+}
+
+.Poison {
+  background-color: #b97fc9;
+  border: transparent;
+  border-radius: 9px;
+}
+
+.Normal {
+  background-color: #a4acaf;
+  border: transparent;
+  border-radius: 9px;
+}
+
+.Psychic {
+  background-color: #f366b9;
+  border: transparent;
+  border-radius: 9px;
+}
+
+.Dragon {
+  background-color: #53a4cf;
+  border: transparent;
+  border-radius: 9px;
+}
+
+.card-pokemon { 
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  float: left;
+}
+
+.img-pokemon {
+  display: inline-block;
+  height: 200px;
+}
+
