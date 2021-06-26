@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import pokemons from './data';
 import Pokedex from './pokedex';
+import Header from './Header';
 
 class App extends Component {
   render() {
     return (
-      <Pokedex pokemons={pokemons}/>
+      <main>
+        <Header />
+        <Pokedex pokemons={pokemons}/>
+      </main>
     )
   }
 }
