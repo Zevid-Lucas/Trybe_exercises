@@ -12,3 +12,6 @@ Resolução: `docker container start 33449311e17c`
 
 5 - Retome o container que foi criado anteriormente nesse exercício ;
 Resolução `docker attach 33449311e17c`
+
+6 - Remova somente o container criado para esse exercício ;
+Resolução: `docker container rm 33449311e17c`
