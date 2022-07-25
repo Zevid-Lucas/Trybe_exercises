@@ -1,0 +1,1 @@
+![Diagrama de relação acervo albuns](https://github.com/Zevid-Lucas/datas/blob/master/imgs/diagrama_relacao_acervo_albuns.png?raw%3Dtrue)
